@@ -75,8 +75,8 @@ const ClientFeedBack = () => {
                             <div className='flex flex-col gap-[40px]'>
                                 <p className='footer font-InterMedium'>{items?.para}</p>
                                 <div className='flex gap-[20px] items-center'>
-                                    <div className='relative w-[100px] h-[100px] '>
-                                        <Image src={items.img} fill alt='image circle' className='rounded-[50px]' />
+                                    <div className='relative w-[70px] h-[70px] md:w-[190px] md:h-[190px] lg:w-[120px] lg:h-[120px] rounded-full'>
+                                        <Image src={items.img} fill alt='image circle' className='rounded-full' />
                                     </div>
                                     <div className='flex flex-col gap-[5px]'>
                                         <p className='btn-var-2 font-InterSemiBold'>{items.name}</p>
@@ -92,13 +92,13 @@ const ClientFeedBack = () => {
 
                 </Swiper>
             </div>
-            <div className={`md:absolute  mx-auto  mt-[30px] w-[60%] md:w-auto gap-[0px] z-[100] md:bottom-[20px]  md:right-0`}>
-                <div className=' w-[100%]  flex items-center justify-between'>
+            <div className={`md:absolute  mx-auto  mt-[40px]   md:w-auto gap-[0px] z-[100] md:bottom-[20px]  md:right-0`}>
+                <div className='flex items-center ml-[30%]'>
                     <button onClick={() => swiperRef.current.slidePrev()} className='px-[26px] py-[15px]  border-black border-[2px] rounded-full'>
                         <Image src='/assets/icons/arrow.svg' alt='arrow-left' width={20} height={20} className='object-contain' />
 
                     </button>
-                    <div className='custom-pagination md:mx-[20px] mx-[0px]'></div>
+                    <div className='custom-pagination mx-[24px] '></div>
                     <button onClick={() => swiperRef.current.slideNext()} className='px-[26px] py-[15px]  border-black border-[2px] rounded-full trnasform rotate-180'>
                         <Image src='/assets/icons/arrow.svg' alt='arrow-left' width={20} height={20} />
 

@@ -140,9 +140,9 @@ const page = () => {
                 <ScreenContainer>
                     <div className="relative flex md:flex-row flex-col justify-between gap-[2%] py-[100px] items-center">
                         <div className="md:w-[57%] w-[100%] flex flex-col  overflow-hidden">
-                            <h4 className="w-full text-wrap hero-section font-InterRegular">
+                            <h1 className="w-full text-wrap hero-section font-InterRegular">
                                 Animated <span className="!font-semibold"> Explainer Video</span> Company
-                            </h4>
+                            </h1>
 
                             <p className="mt-[20px] w-[100%] md:w-[80%] sec-hero-section-reg text-primary-1 font-InterMedium">
                                 At Glowza Digital, we create mesmerizing animated explainer videos that
@@ -252,7 +252,7 @@ const page = () => {
 
             {/* Stacked Cards Section */}
             <section className="py-[100px]">
-                <ScreenContainer className="md:!px-[150px] ">
+                <ScreenContainer className="xl:!px-[150px] ">
                     <div className='flex flex-col gap-[20px] mb-[50px] mr-[0px] md:mr-[20px] w-full'>
                         <h5 className='heading-var-sec font-InterRegular'>Transform Your Message in to Captivating Visual Stories</h5>
                         <p className='sec-hero-section-400 font-InterRegular text-primary-3 w-[85%]'>As an expert explainer video production company, we create dynamic animations—from e-learning video production to stunning 3D motion graphics services. Need guidance? Our team is here to bring your vision to life!</p>
@@ -262,9 +262,9 @@ const page = () => {
                         className="w-full flex flex-col items-center gap-[30px]"
                     >
                         {data.map((item, index) => (
-                            <div className="stacked-card relative flex flex-col w-full">
+                            <div className="stacked-card relative flex flex-col w-full ">
 
-                                <div key={index} className="card relative z-[10] shadow-lg w-full md:pl-[30px] p-[20px] md:p-[0px] md:pr-[10px] flex md:flex-row flex-col justify-between items-center rounded-[24px] bg-white">
+                                <div key={index} className="card shadow-lg relative z-[10]  w-full md:pl-[30px] p-[20px] md:p-[0px] md:pr-[10px] flex md:flex-row flex-col justify-between items-center rounded-[24px] bg-white">
                                     <div className="flex flex-col gap-[24px] md:w-[45%] py-[20px] md:py-[20px] w-[100%]">
                                         <h5 className="heading-var-third font-InterRegular">{item?.title}</h5>
                                         <p className="sec-hero-section-reg font-InterRegular !text-primary-3">
@@ -356,14 +356,14 @@ const page = () => {
             </section>
             {/* Highlights section ends */}
 
-            <section className='my-[30px]'>
+            <section className='my-[20px]'>
                 <ScreenContainer className='!px-[0px] lg:!px-[150px]'>
                     <div className='flex justify-between items-center'>
-                        <h5 className='heading-var-fourth font-InterRegular m-[10px]'>Clients Feedback</h5>
+                        <h5 className='heading-var-fourth font-InterSemiBold m-[10px]'>Clients Feedback</h5>
                         
 
                     </div>
-                    <div className='pt-[30px] m-[10px]'>
+                    <div className='py-[30px] m-[10px]'>
                     <ClientFeedBack/></div>
                 </ScreenContainer>
             </section>
@@ -396,7 +396,7 @@ const page = () => {
                 </ScreenContainer>
                 <div className='w-[100%]  flex lg:flex-row flex-col justify-between items-end'>
                     <ScreenContainer className='!mx-0 !ml-auto w-[100%] lg:!w-[59%]'>
-                        <div className='my-[50px] mx-[10px] px-[150px] border rounded-[12px] '>
+                        <div className='my-[50px] mx-[10px] xl:px-[150px] px-[25px] border rounded-[12px] '>
                             <div className='my-[10px] w-full '>
                                 <form onSubmit={formik.handleSubmit} className='flex flex-col items-end w-full'>
                                     <fieldset className='flex flex-col gap-[15px] my-[15px] w-full'>
