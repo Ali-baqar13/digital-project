@@ -408,24 +408,24 @@ const page = () => {
                                         <label className='font-InterRegular'>Company Name <span className='text-[14px] text-red-500'>*</span></label>
                                         <input className='border w-full rounded-[8px] px-[12px] h-[48px]' name='companyName' placeholder={'Compamy Name'} value={formik.values.companyName} onChange={formik.handleChange} onBlur={formik.handleBlur} />
 
-                                        {formik.touched.companyName && formik.errors.companyName && <span className='text-red-700'>{formik.errors.companyName}</span>}
+                                        {formik.touched.companyName && formik.errors.companyName && <span className='text-red-700'>{formik.errors.companyName as any}</span>}
                                     </fieldset>
                                     <fieldset className='flex flex-col gap-[15px] my-[15px]  w-full'>
                                         <label className='font-InterRegular'>Work Email <span className='text-[14px] text-red-500'>*</span></label>
                                         <input className='border w-full rounded-[8px] px-[14px] h-[48px]' type='email' name='email' placeholder={'Work Email'} value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} />
-                                        {formik.touched.email && formik.errors.email && <span className='text-red-700'>{formik.errors.email}</span>}
+                                        {formik.touched.email && formik.errors.email && <span className='text-red-700'>{formik.errors.email as any}</span>}
 
                                     </fieldset>
                                     <fieldset className='flex flex-col gap-[15px] my-[15px]  w-full'>
                                         <label className='font-InterRegular'>Phone <span className='text-[14px] text-red-500'>*</span></label>
                                         <input className='border w-full rounded-[8px] px-[14px] h-[48px]' name='phone' placeholder={'Phone'} value={formik.values.phone} onChange={formik.handleChange} onBlur={formik.handleBlur} />
-                                        {formik.touched.phone && formik.errors.phone && <span className='text-red-700'>{formik.errors.phone}</span>}
+                                        {formik.touched.phone && formik.errors.phone && <span className='text-red-700'>{formik.errors.phone as any}</span>}
 
                                     </fieldset>
                                     <fieldset className='flex flex-col gap-[15px] my-[15px]  w-full'>
                                         <label className='font-InterRegular'>Tell us about your vodeo needs! <span className='text-[14px] text-red-500'>*</span></label>
                                         <input className='border w-full rounded-[8px] px-[14px] h-[48px]' name='tellUsAbout' placeholder={'Write Something Here....'} value={formik.values.tellUsAbout} onChange={formik.handleChange} onBlur={formik.handleBlur} />
-                                        {formik.touched.tellUsAbout && formik.errors.tellUsAbout && <span className='text-red-700'>{formik.errors.tellUsAbout}</span>}
+                                        {formik.touched.tellUsAbout && formik.errors.tellUsAbout && <span className='text-red-700'>{formik.errors.tellUsAbout as any}</span>}
 
                                     </fieldset>
 
