@@ -45,7 +45,7 @@ const ClientFeedBack = () => {
 
     return (
 
-        <div className='relative w-full'>
+        <div className='relative flex flex-col items-center md:block w-full'>
             <div ref={sweepRef} className='w-full h-auto'>
                 <Swiper
 
@@ -75,7 +75,7 @@ const ClientFeedBack = () => {
                             <div className='flex flex-col gap-[40px]'>
                                 <p className='footer font-InterMedium'>{items?.para}</p>
                                 <div className='flex gap-[20px] items-center'>
-                                    <div className='relative w-[70px] h-[70px] md:w-[190px] md:h-[190px] lg:w-[120px] lg:h-[120px] rounded-full'>
+                                    <div className='relative shrink-0 w-[70px] h-[70px] md:w-[190px] md:h-[190px] lg:w-[120px] lg:h-[120px] rounded-full'>
                                         <Image src={items.img} fill alt='image circle' className='rounded-full' />
                                     </div>
                                     <div className='flex flex-col gap-[5px]'>
@@ -93,7 +93,7 @@ const ClientFeedBack = () => {
                 </Swiper>
             </div>
             <div className={`md:absolute  mx-auto  mt-[40px]   md:w-auto gap-[0px] z-[100] md:bottom-[20px]  md:right-0`}>
-                <div className='flex items-center ml-[30%]'>
+                <div className='flex items-center w-auto'>
                     <button onClick={() => swiperRef.current.slidePrev()} className='px-[26px] py-[15px]  border-black border-[2px] rounded-full'>
                         <Image src='/assets/icons/arrow.svg' alt='arrow-left' width={20} height={20} className='object-contain' />
 

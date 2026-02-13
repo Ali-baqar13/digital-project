@@ -200,10 +200,25 @@ const page = () => {
 
                             <div className="flex flex-col mt-[20px]">
                                 <h5 className="sec-hero-section font-InterMedium mb-[20px]">TRUSTED BY TEAMS AT</h5>
-                                <div className="flex m-[10px] gap-[53px] items-center">
-                                    <Image src="/assets/images/trustPilot.webp" alt="logo-image" width={132} height={53} />
-                                    <Image src="/assets/images/googleLogo.webp" alt="logo-image" width={99} height={53} />
-                                    <Image src="/assets/images/upwork-logo.webp" alt="logo-image" width={132} height={38} />
+                                <div className="flex m-[10px] justify-between items-center">
+                                   <Image
+  src="/assets/images/trustPilot.webp"
+  alt="trustpilot logo"
+  className="md:aspect-[132/53] aspect-[100/36] w-full object-contain"
+/>
+
+<Image
+  src="/assets/images/googleLogo.webp"
+  alt="google logo"
+  className="md:aspect-[132/53] aspect-[100/36] w-full object-contain"
+/>
+
+<Image
+  src="/assets/images/upwork-logo.webp"
+  alt="upwork logo"
+  className="md:aspect-[132/38] aspect-[100/36] w-full object-contain"
+/>
+
                                 </div>
                             </div>
                         </div>
@@ -357,7 +372,7 @@ const page = () => {
             {/* Highlights section ends */}
 
             <section className='my-[20px]'>
-                <ScreenContainer className='!px-[0px] lg:!px-[150px]'>
+                <ScreenContainer className='!px-[20px] lg:!px-[150px]'>
                     <div className='flex justify-between items-center'>
                         <h5 className='heading-var-fourth font-InterSemiBold m-[10px]'>Clients Feedback</h5>
                         
