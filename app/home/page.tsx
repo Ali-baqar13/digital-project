@@ -84,7 +84,7 @@ const page = () => {
                         pin: true,
                         pinSpacing: false,
                         scrub: true,
-                        markers: true,
+                        markers: false,
                         invalidateOnRefresh:true,
 
                     }
