@@ -275,7 +275,7 @@ const page = () => {
             {/* Stacked Cards Section */}
             <section className="py-[100px] bg-white">
                 <ScreenContainer className="xl:!px-[150px] ">
-                    <div className='flex flex-col gap-[20px] mb-[50px] mr-[0px] md:mr-[20px] w-full'>
+                    <div className='flex flex-col gap-[20px] mb-[50px] mr-[0px] md:mr-[20px] w-full text-black bg-white'>
                         <h5 className='heading-var-sec font-InterRegular'>Transform Your Message in to Captivating Visual Stories</h5>
                         <p className='sec-hero-section-400 font-InterRegular text-primary-3 w-[85%]'>As an expert explainer video production company, we create dynamic animations—from e-learning video production to stunning 3D motion graphics services. Need guidance? Our team is here to bring your vision to life!</p>
                     </div>
@@ -356,7 +356,7 @@ const page = () => {
 
             {/* Heighlights Sections */}
 
-            <section className='pt-[50px] md:pt-[100px] bg-white'>
+            <section className='pt-[50px] md:pt-[100px] bg-white text-black'>
                 <ScreenContainer className='px-[150px]'>
                     <div className="flex flex-col">
                         <h6 className="heading-var-fourth font-InterRegular mb-[20px]">Highlights From Our Work</h6>
@@ -392,7 +392,7 @@ const page = () => {
 
             {/*  Get Instant Section */}
 
-            <section className="md:my-[70px] my-[50px]">
+            <section className="md:my-[70px] my-[50px] bg-white">
                 <ScreenContainer>
                     <div className="relative flex items-center w-full h-[600px] min-w-[100px] min-h-[100px]">
                         <Image
@@ -410,10 +410,10 @@ const page = () => {
             </section>
 
             {/* Form part */}
-            <section className='py-[50px] md:py-[70px] bg-white'>
+            <section className='py-[50px] md:py-[70px] bg-white text-black'>
                 <ScreenContainer>
-                    <h6 className='heading-var-fourth font-InterRegular mb-[20px]'>Get in Touch</h6>
-                    <p className="font-text-normal font-InterRegular w-[100%] lg:w-[61%] tetx-primary-3">At Glowza Digital our mission is to empower individuals and businesses through innovative technology solutions that enrich lives, foster growth, and drive positive change.</p>
+                    <h6 className='heading-var-fourth font-InterRegular mb-[20px] text-black'>Get in Touch</h6>
+                    <p className="font-text-normal font-InterRegular w-[100%] lg:w-[61%] tetx-primary-3 text-black">At Glowza Digital our mission is to empower individuals and businesses through innovative technology solutions that enrich lives, foster growth, and drive positive change.</p>
 
                 </ScreenContainer>
                 <div className='w-[100%]  flex lg:flex-row flex-col justify-between items-end'>

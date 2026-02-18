@@ -73,14 +73,14 @@ const ClientFeedBack = () => {
                     {swiperData.map((items, index) =>
                         <SwiperSlide key={index}>
                             <div className='flex flex-col gap-[40px]'>
-                                <p className='footer font-InterMedium'>{items?.para}</p>
+                                <p className='footer font-InterMedium text-black'>{items?.para}</p>
                                 <div className='flex gap-[20px] items-center'>
                                     <div className='relative shrink-0 w-[70px] h-[70px] md:w-[190px] md:h-[190px] lg:w-[120px] lg:h-[120px] rounded-full'>
                                         <Image src={items.img} fill alt='image circle' className='rounded-full' />
                                     </div>
                                     <div className='flex flex-col gap-[5px]'>
-                                        <p className='btn-var-2 font-InterSemiBold'>{items.name}</p>
-                                        <p className='btn font-InterRegular text-primary-3'>{items?.title}</p>
+                                        <p className='btn-var-2 font-InterSemiBold text-black'>{items.name}</p>
+                                        <p className='btn font-InterRegular text-primary-3 text-black'>{items?.title}</p>
                                     </div>
                                 </div>
 
