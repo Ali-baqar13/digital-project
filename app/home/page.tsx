@@ -61,16 +61,16 @@ const page = () => {
 
     const [open, setOpen] = useState<boolean>(false)
     const wrapperRef = useRef<HTMLDivElement>(null)
-   
+
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
-       
+
         const wrappers = gsap.utils.toArray('.card')
         console.log(wrappers, 'checking for container')
         const ctx = gsap.context(() => {
             wrappers.forEach((wrapper: any, index: number) => {
                 const startWrapper = (index * 5) + 5
-                
+
                 const lastIdx = wrappers.length - 1
                 const targetScale = index !== lastIdx ? 0.9 + 0.025 * index : 1;
                 gsap.to(wrapper, {
@@ -79,12 +79,13 @@ const page = () => {
                         trigger: wrapper,
                         start: `top ${startWrapper}%`,
                         // end: `bottom 550`,
-                          end: `${window.innerWidth < 768 ? 'center' : 'bottom'} ${window.innerWidth < 768 ? 'top' : '558px'}`,
+                        end: `${window.innerWidth < 768 ? 'center' : 'bottom'} ${window.innerWidth < 768 ? 'top' : '558px'}`,
                         endTrigger: wrapperRef.current,
                         pin: true,
                         pinSpacing: false,
                         scrub: true,
-                        markers: false
+                        markers: true,
+                        invalidateOnRefresh:true,
 
                     }
                 })
@@ -140,11 +141,11 @@ const page = () => {
                 <ScreenContainer>
                     <div className="relative flex md:flex-row flex-col justify-between gap-[2%] py-[100px] items-center">
                         <div className="md:w-[57%] w-[100%] flex flex-col  overflow-hidden">
-                            <h1 className="w-full text-wrap hero-section font-InterRegular">
-                                Animated <span className="!font-semibold"> Explainer Video</span> Company
+                            <h1 className="w-full text-wrap hero-section font-InterRegular text-black">
+                                Animated <span className="!font-semibold "> Explainer Video</span> Company
                             </h1>
 
-                            <p className="mt-[20px] w-[100%] md:w-[80%] sec-hero-section-reg text-primary-1 font-InterMedium">
+                            <p className="mt-[20px] w-[100%] md:w-[80%] sec-hero-section-reg text-primary-1 font-InterMedium text-black">
                                 At Glowza Digital, we create mesmerizing animated explainer videos that
                                 simplify complex concepts into engaging narratives. As the top animated
                                 video company our custom animations enhance brand visibility and leave a
@@ -201,23 +202,29 @@ const page = () => {
                             <div className="flex flex-col mt-[20px]">
                                 <h5 className="sec-hero-section font-InterMedium mb-[20px]">TRUSTED BY TEAMS AT</h5>
                                 <div className="flex m-[10px] justify-between items-center">
-                                   <Image
-  src="/assets/images/trustPilot.webp"
-  alt="trustpilot logo"
-  className="md:aspect-[132/53] aspect-[100/36] w-full object-contain"
-/>
+                                    <Image
+                                    width={132}
+                                    height={53}
+                                        src="/assets/images/trustPilot.webp"
+                                        alt="trustpilot logo"
+                                        className="md:aspect-[132/53] aspect-[100/36] w-full object-contain"
+                                    />
 
-<Image
-  src="/assets/images/googleLogo.webp"
-  alt="google logo"
-  className="md:aspect-[132/53] aspect-[100/36] w-full object-contain"
-/>
+                                    <Image
+                                    width={132}
+                                    height={53}
+                                        src="/assets/images/googleLogo.webp"
+                                        alt="google logo"
+                                        className="md:aspect-[132/53] aspect-[100/36] w-full object-contain"
+                                    />
 
-<Image
-  src="/assets/images/upwork-logo.webp"
-  alt="upwork logo"
-  className="md:aspect-[132/38] aspect-[100/36] w-full object-contain"
-/>
+                                    <Image
+                                    width={132}
+                                    height={53} 
+                                        src="/assets/images/upwork-logo.webp"
+                                        alt="upwork logo"
+                                        className="md:aspect-[132/38] aspect-[100/36] w-full object-contain"
+                                    />
 
                                 </div>
                             </div>
@@ -259,14 +266,14 @@ const page = () => {
                     </div>
                 </ScreenContainer>
             </section>
-           
-               
 
-                    
-               
+
+
+
+
 
             {/* Stacked Cards Section */}
-            <section className="py-[100px]">
+            <section className="py-[100px] bg-white">
                 <ScreenContainer className="xl:!px-[150px] ">
                     <div className='flex flex-col gap-[20px] mb-[50px] mr-[0px] md:mr-[20px] w-full'>
                         <h5 className='heading-var-sec font-InterRegular'>Transform Your Message in to Captivating Visual Stories</h5>
@@ -349,7 +356,7 @@ const page = () => {
 
             {/* Heighlights Sections */}
 
-            <section className='pt-[50px] md:pt-[100px]'>
+            <section className='pt-[50px] md:pt-[100px] bg-white'>
                 <ScreenContainer className='px-[150px]'>
                     <div className="flex flex-col">
                         <h6 className="heading-var-fourth font-InterRegular mb-[20px]">Highlights From Our Work</h6>
@@ -371,15 +378,15 @@ const page = () => {
             </section>
             {/* Highlights section ends */}
 
-            <section className='my-[20px]'>
+            <section className='my-[20px] bg-white'>
                 <ScreenContainer className='!px-[20px] lg:!px-[150px]'>
                     <div className='flex justify-between items-center'>
                         <h5 className='heading-var-fourth font-InterSemiBold m-[10px]'>Clients Feedback</h5>
-                        
+
 
                     </div>
                     <div className='py-[30px] m-[10px]'>
-                    <ClientFeedBack/></div>
+                        <ClientFeedBack /></div>
                 </ScreenContainer>
             </section>
 
@@ -403,7 +410,7 @@ const page = () => {
             </section>
 
             {/* Form part */}
-            <section className='py-[50px] md:py-[70px]'>
+            <section className='py-[50px] md:py-[70px] bg-white'>
                 <ScreenContainer>
                     <h6 className='heading-var-fourth font-InterRegular mb-[20px]'>Get in Touch</h6>
                     <p className="font-text-normal font-InterRegular w-[100%] lg:w-[61%] tetx-primary-3">At Glowza Digital our mission is to empower individuals and businesses through innovative technology solutions that enrich lives, foster growth, and drive positive change.</p>
