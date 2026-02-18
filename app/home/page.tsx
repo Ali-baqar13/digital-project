@@ -14,6 +14,7 @@ import Thumbnail from '../component/ui/Thumbnail'
 import { Formik, useFormik } from 'formik'
 import * as  yup from 'yup'
 import ClientFeedBack from '../component/client-feedback/page'
+import axios from 'axios'
 gsap.registerPlugin(ScrollTrigger)
 
 const data = [
@@ -115,8 +116,10 @@ const page = () => {
 
         },
         validationSchema: validtionSchema,
-        onSubmit: (val: any) => {
+        onSubmit: async  (val: any) => {
             console.log(val, ' i am checking submit values')
+            const res =await axios.post('https://formspree.io/f/xgolzyvg',val)
+            console.log(res, "form has been submitted")
         }
     })
 

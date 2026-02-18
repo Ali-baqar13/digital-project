@@ -68,8 +68,8 @@ const Footer = () => {
                 </div>
 
                 <div className='flex flex-col gap-[20px] text-white items-center '>
-                    <h6 className='footer  font-InterSemiBold'>+1 (909) 287-1414</h6>
-                    <p className='btn font-InterRegular'>info@glowzadigital.com</p>
+                    <h6 className='footer  font-InterSemiBold'>03092894917</h6>
+                    <p className='btn font-InterRegular'>baqar2502@gail.com</p>
                 </div>
 
 
