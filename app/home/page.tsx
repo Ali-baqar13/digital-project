@@ -288,7 +288,7 @@ const page = () => {
 
                                 <div key={index} className="card shadow-lg relative z-[10]  w-full md:pl-[30px] p-[20px] md:p-[0px] md:pr-[10px] flex md:flex-row flex-col justify-between items-center rounded-[24px] bg-white">
                                     <div className="flex flex-col gap-[24px] md:w-[45%] py-[20px] md:py-[20px] w-[100%]">
-                                        <h5 className="heading-var-third font-InterRegular">{item?.title}</h5>
+                                        <h5 className="heading-var-third font-InterRegular text-black">{item?.title}</h5>
                                         <p className="sec-hero-section-reg font-InterRegular !text-primary-3">
                                             {item?.desc}
                                         </p>
@@ -378,10 +378,10 @@ const page = () => {
             </section>
             {/* Highlights section ends */}
 
-            <section className='my-[20px] bg-white'>
+            <section className='py-[20px] bg-white'>
                 <ScreenContainer className='!px-[20px] lg:!px-[150px]'>
                     <div className='flex justify-between items-center'>
-                        <h5 className='heading-var-fourth font-InterSemiBold m-[10px]'>Clients Feedback</h5>
+                        <h5 className='heading-var-fourth font-InterSemiBold m-[10px] text-black'>Clients Feedback</h5>
 
 
                     </div>
@@ -392,7 +392,7 @@ const page = () => {
 
             {/*  Get Instant Section */}
 
-            <section className="md:my-[70px] my-[50px] bg-white">
+            <section className="md:py-[70px] py-[50px] bg-white">
                 <ScreenContainer>
                     <div className="relative flex items-center w-full h-[600px] min-w-[100px] min-h-[100px]">
                         <Image
